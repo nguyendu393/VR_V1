@@ -19,7 +19,7 @@ public class Trigger : MonoBehaviour {
         Debug.Log("TRigger");
     }
 
-    private void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     {
         Debug.Log("Strya");
     }
@@ -27,5 +27,20 @@ public class Trigger : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Coll");
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        Debug.Log("TRiggeExitr");
+    }
+
+    void OnCollisionStay(Collision other)
+    {
+        Debug.Log("ColiStrya");
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        Debug.Log("CollExit");
     }
 }

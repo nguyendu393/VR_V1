@@ -9,10 +9,10 @@ public class Obstacle : SomeThing {
 		
 	}
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision orther)
     {
         Debug.Log("nhsnsvsh");
-        if (collision.gameObject.tag == "Player")
+        if (orther.gameObject.tag == "Player")
         {
             Debug.Log("Trung cmnr");
         }
